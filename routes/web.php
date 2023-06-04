@@ -14,6 +14,7 @@ use App\Http\Livewire\ReportsController;
 use App\Http\Livewire\PermisosController;
 use App\Http\Livewire\ProductsController;
 use App\Http\Controllers\ExportController;
+use App\Http\Livewire\CallController;
 use App\Http\Livewire\CategoriesController;
 use App\Http\Livewire\ServicesController;
 
@@ -24,6 +25,7 @@ Auth::routes(['register' => false]); // deshabilitamos el registro de nuevos use
 Route::get('/home', Dash::class)->name('dash');
 Route::middleware(['auth'])->group(function () {
     Route::get('services', ServicesController::class)->middleware('role:Admin');
+    Route::get('calls', CallController::class)->middleware('role:Admin');
     // Route::get('categories', CategoriesController::class)->middleware('role:Admin');
     // Route::get('products', ProductsController::class);
     // Route::get('coins', CoinsController::class);

@@ -19,7 +19,7 @@
             </svg>
         </a>
 
-        <livewire:search-controller>
+        {{-- <livewire:search-controller> --}}
 
             <ul class="navbar-item flex-row navbar-dropdown">
 
