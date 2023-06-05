@@ -20,6 +20,9 @@
         </a>
 
         {{-- <livewire:search-controller> --}}
+            <ul class="navbar-item flex-row search-ul">
+            </ul>
+
 
             <ul class="navbar-item flex-row navbar-dropdown">
 

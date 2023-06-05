@@ -10,6 +10,8 @@ class CallController extends Component
 {
     public function render()
     {
-        return view('livewire.call-controller');
+        return view('livewire.call-controller')
+        ->extends('layouts.theme.app')
+		->section('content');
     }
 }
